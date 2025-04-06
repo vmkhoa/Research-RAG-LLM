@@ -5,10 +5,13 @@ description = "Conversational LLM fine-tuned on research papers with RAG"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    'arxiv',
+    'tqdm',
     "langchain",
     "openai",
     "faiss-cpu",
     "sentence-transformers",
-    "pypdf",
-    "requests>=2.32.3",
+    "pymupdf>=1.25.5",
+    "nltk>=3.9.1",
+    "pandas>=2.2.3",
 ]
