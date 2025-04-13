@@ -17,4 +17,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib>=3.10.1",
     "seaborn>=0.13.2",
+    "transformers>=4.50.3",
+    "datasets>=3.5.0",
+    "peft>=0.15.1",
 ]
