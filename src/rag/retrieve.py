@@ -11,7 +11,7 @@ def load_paper_embedding_collection(index_path: str, embed_model: str):
         raise RuntimeError("Chroma collection 'papers' not found. Run rag_embed.py first.")
 
 
-def retrieve_top_k(query: str, model_name: str, index_path: str, embed_model: str, k: int = 3):
+def retrieve_top_k(query: str, index_path: str, embed_model: str, k: int = 3):
     collection = load_paper_embedding_collection(index_path, embed_model)
     results = collection.query(query_texts=[query], n_results=k)
     return [
