@@ -5,6 +5,9 @@ build/
 dist/
 wheels/
 *.egg-info
-
+data/vector_index/
+*.sqlite3
+*.parquet
 # Virtual environments
 .venv
+.vscode/
